@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan 1</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h2>Score : <span class="score">0</span>  &nbsp;|&nbsp; Wrong : <span class="wrong">0</span></h2>
+        </div>
+    </header>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <div class="card">
+                        <p class="soal">3+4</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="answer">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Masukan Jawaban</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+    <ul class="menu">
+        <li><a href="">Tambah</a></li>
+        <li><a href="">Kurang</a></li>
+        <li><a href="">Kali</a></li>
+        <li><a href="">Bagi</a></li>
+        <li><a href="">Pangkat</a></li>
+        <li><a href="">Akar</a></li>
+    </ul>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI';
+            margin:0;
+            padding:0;
+        }
+        body {
+            background: #f8f8f8;
+        }
+
+
+        header {
+            width:100%;
+            background:#fff;
+            box-shadow:0 1px 2px 0 rgba(0,0,0,0.3);
+            padding:10px;
+        }
+        header h2 {
+            font-size:16px;
+            text-align: center;
+        }
+
+        table {
+            margin:20px auto;
+            width: 260px;
+        }
+
+        table td input, table td button {
+            width:100%;
+            box-shadow:0 1px 2px 0 rgba(0,0,0,0.3);
+        }
+
+        table td input {
+            background:#fff;
+            border:none;
+            padding:14px 20px;
+            font-size:40px;
+            text-align: center;
+        }
+        table td input:focus {
+            outline: none;
+            background: #fefefe;
+        }
+
+        table td button {
+            background:#1b50ee;
+            color:#fff;
+            border:none;
+            padding:10px 20px;
+            margin-top: 5px;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        div.card {
+            background:#fff;
+            width: 100%;
+            text-align: center;
+            padding:20px;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+            font-size: 20px;
+            font-weight: 900;
+            color:#522bcc;
+        }
+
+        ul.menu {
+            width:100%;
+            text-align: center;
+        }
+        ul.menu li {
+            display: inline-block;
+            margin:3px;
+        }
+        ul.menu li a {
+            border:1px solid #333;
+            background:#fff;
+            color:#333;
+            font-size:12px;
+            text-decoration: none;
+            padding:3px 8px;
+            display: block;
+        }
+    </style>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
